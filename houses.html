@@ -11,17 +11,64 @@
 		<title>Houses</title>
 	</head>
 	<body>
+		<!-- NavBar Login -->
 		<header class="navbar navbar-expand-md py-2">
 			<div class="rcontainer-xxl d-flex align-items-md-center">
 				<a class="navbar-brand position-relative me-auto" href="/" aria-lable="AirBnb">
 						<img src="images/logo-airbnb.png" alt="AirBnb Logo">
 				</a>
-				<button type="button" class="btn btn-outline-primary ms-3">
+				<button type="button" class="btn btn-outline-primary pe-3 ms-3">
 					<img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle" height="20px" alt="avatar" >
 						User Name</button>
 				<button type="button" class="btn btn-outline-primary mw-100 mh-100">Log Out</button>
 			</div>
 		</header>
+		<!-- NavBar Filter/Search-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light m-auto">
+			<div class="container-fluid">
+				<form class="d-flex">
+
+					<div class="input-group">
+						<span class="input-group-text" id="basic-addon1">@</span>
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Any Location</option>
+							<option value="1">Koh Phangan</option>
+							<option value="2">Koh Samui</option>
+							<option value="3">Bali</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-text" id="basic-addon1">@</span>
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Any Rooms</option>
+							<option value="1">1 room</option>
+							<option value="2">2 rooms</option>
+							<option value="3">3 rooms</option>
+							<option value="3">4 rooms</option>
+							<option value="3">5 rooms</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-text" id="basic-addon1">@</span>
+						<input type="number" class="form-control" placeholder="Max Price" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-text" id="basic-addon1">@</span>
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Price (low to high)</option>
+							<option value="1">Price (high to low)</option>
+						</select>
+					</div>
+
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+
+			</div>
+		</nav>
 
 
 
